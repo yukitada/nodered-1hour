@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: nodered-1hour
+  host: nodered-1hour
+  disk_quota: 1024M
+  services:
+  - nodered-1hour-cloudantNoSQLDB
+  - performance-monitoring-auto
+  - Conversation-eh
